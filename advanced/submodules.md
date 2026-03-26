@@ -1,30 +1,72 @@
-# 📦 Git Submodules
+# 📦 Git Submodules - Explicación Completa
 
-## 🧠 ¿Qué son?
-
-Repos dentro de otros repos.
+Permiten incluir un repositorio dentro de otro.
 
 ---
 
-## ➕ Agregar
+## 📌 ¿Qué es un submodule?
 
+Es un repo externo referenciado dentro de otro repo.
+
+---
+
+## ➕ Agregar submodule
+
+```bash
 git submodule add <repo>
+```
+
+**¿Qué hace?**
+- Agrega un repo dentro del proyecto
+- Guarda referencia a un commit específico
 
 ---
 
 ## 📥 Clonar con submodules
 
+```bash
 git clone --recurse-submodules <repo>
+```
+
+**¿Qué hace?**
+- Clona repo principal + submodules
 
 ---
 
-## 🔄 Actualizar
+## 🔄 Inicializar submodules
 
+```bash
 git submodule update --init --recursive
+```
+
+**¿Qué hace?**
+- Descarga contenido de submodules
 
 ---
 
-## ⚠️ Uso
+## 🔁 Actualizar
 
-- Dependencias externas
-- Librerías compartidas
+```bash
+git submodule update --remote
+```
+
+---
+
+## 📌 ¿Cuándo usarlo?
+
+- Librerías externas
+- Repos compartidos
+
+---
+
+## ⚠️ Problemas comunes
+
+- Quedan desactualizados
+- Manejo más complejo
+
+---
+
+## 🧠 Alternativas
+
+- Monorepo
+- Package managers
